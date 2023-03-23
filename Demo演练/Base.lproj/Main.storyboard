@@ -9,6 +9,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Demo-->
+        <scene sceneID="gSg-JG-RYm">
+            <objects>
+                <tableViewController id="yva-QA-ZdS" customClass="RootTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="kwt-MP-TEG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RootCell" id="NSv-v0-Dj9">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NSv-v0-Dj9" id="Odi-Rj-8IA">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yva-QA-ZdS" id="TB7-hg-Qpn"/>
+                            <outlet property="delegate" destination="yva-QA-ZdS" id="sPo-ma-VWg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Demo" id="jM5-6D-VRP"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="DBTest" id="33J-vi-KW1"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mEd-Ur-kuI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3473" y="-218"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hu0-Tx-hi2">
             <objects>
@@ -18,12 +50,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9fh-yM-jR6"/>
+                        <segue destination="yva-QA-ZdS" kind="relationship" relationship="rootViewController" id="5h7-Uc-Gcy"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iIC-Ao-O4o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3122" y="-217"/>
+            <point key="canvasLocation" x="-4618" y="-218"/>
         </scene>
         <!--数据库测试-->
         <scene sceneID="tne-QT-ifu">
@@ -110,7 +142,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="数据库FMDB" id="I8S-Ai-gsV">
                         <connections>
-                            <outlet property="leftBarButtonItem" destination="yK9-Lh-yNo" id="ePn-i8-IP8"/>
                             <outlet property="rightBarButtonItem" destination="gcb-Q8-auD" id="yyu-5g-LAf"/>
                         </connections>
                     </navigationItem>
@@ -126,9 +157,8 @@
                         <segue destination="d5J-fl-abn" kind="push" id="X2y-Op-70w"/>
                     </connections>
                 </barButtonItem>
-                <barButtonItem title="左边" id="yK9-Lh-yNo"/>
             </objects>
-            <point key="canvasLocation" x="-2034.3511450381679" y="-218.3098591549296"/>
+            <point key="canvasLocation" x="-3474" y="535"/>
         </scene>
         <!--添加-->
         <scene sceneID="0Tl-d9-l8W">
@@ -206,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPs-1y-FbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1143" y="-506"/>
+            <point key="canvasLocation" x="-3474" y="1760"/>
         </scene>
         <!--查找-->
         <scene sceneID="h1I-2L-SN4">
@@ -302,7 +332,7 @@
                     </connections>
                 </barButtonItem>
             </objects>
-            <point key="canvasLocation" x="-611" y="563"/>
+            <point key="canvasLocation" x="-4182" y="1760"/>
         </scene>
         <!--全部信息-->
         <scene sceneID="FdJ-d5-rCv">
@@ -318,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ok-Eo-gvr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="563"/>
+            <point key="canvasLocation" x="-4182" y="2493"/>
         </scene>
         <!--修改-->
         <scene sceneID="k8Y-4Y-w2M">
@@ -403,7 +433,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C7v-bc-RHc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1341" y="563"/>
+            <point key="canvasLocation" x="-2013" y="1760"/>
         </scene>
         <!--课程 Class-->
         <scene sceneID="19T-ia-e7f">
@@ -519,7 +549,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dpd-nQ-3bf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2034" y="563"/>
+            <point key="canvasLocation" x="-2731" y="1760"/>
         </scene>
     </scenes>
     <resources>
