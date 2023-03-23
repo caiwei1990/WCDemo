@@ -1,0 +1,72 @@
+PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - LLDebugTool (1.3.8.1):
+    - LLDebugTool/AppInfo (= 1.3.8.1)
+    - LLDebugTool/Core (= 1.3.8.1)
+    - LLDebugTool/Crash (= 1.3.8.1)
+    - LLDebugTool/Hierarchy (= 1.3.8.1)
+    - LLDebugTool/Html (= 1.3.8.1)
+    - LLDebugTool/Location (= 1.3.8.1)
+    - LLDebugTool/Log (= 1.3.8.1)
+    - LLDebugTool/Magnifier (= 1.3.8.1)
+    - LLDebugTool/Network (= 1.3.8.1)
+    - LLDebugTool/Ruler (= 1.3.8.1)
+    - LLDebugTool/Sandbox (= 1.3.8.1)
+    - LLDebugTool/Screenshot (= 1.3.8.1)
+    - LLDebugTool/ShortCut (= 1.3.8.1)
+    - LLDebugTool/Storage (= 1.3.8.1)
+    - LLDebugTool/WidgetBorder (= 1.3.8.1)
+  - LLDebugTool/AppInfo (1.3.8.1):
+    - LLDebugTool/Core
+  - LLDebugTool/Core (1.3.8.1)
+  - LLDebugTool/Crash (1.3.8.1):
+    - LLDebugTool/Storage
+  - LLDebugTool/Hierarchy (1.3.8.1):
+    - LLDebugTool/Core
+  - LLDebugTool/Html (1.3.8.1):
+    - LLDebugTool/Core
+  - LLDebugTool/Location (1.3.8.1):
+    - LLDebugTool/Core
+  - LLDebugTool/Log (1.3.8.1):
+    - LLDebugTool/Storage
+  - LLDebugTool/Magnifier (1.3.8.1):
+    - LLDebugTool/Core
+  - LLDebugTool/Network (1.3.8.1):
+    - LLDebugTool/Storage
+  - LLDebugTool/Ruler (1.3.8.1):
+    - LLDebugTool/Core
+  - LLDebugTool/Sandbox (1.3.8.1):
+    - LLDebugTool/Core
+  - LLDebugTool/Screenshot (1.3.8.1):
+    - LLDebugTool/Core
+  - LLDebugTool/ShortCut (1.3.8.1):
+    - LLDebugTool/Core
+  - LLDebugTool/Storage (1.3.8.1):
+    - FMDB (~> 2.0)
+    - LLDebugTool/Core
+  - LLDebugTool/WidgetBorder (1.3.8.1):
+    - LLDebugTool/Core
+  - LookinServer (1.1.5):
+    - LookinServer/Core (= 1.1.5)
+  - LookinServer/Core (1.1.5)
+
+DEPENDENCIES:
+  - LLDebugTool (= 1.3.8.1)
+  - LookinServer
+
+SPEC REPOS:
+  trunk:
+    - FMDB
+    - LLDebugTool
+    - LookinServer
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  LLDebugTool: 6026a1df690f5f94524567fce7f97fa53ce131d8
+  LookinServer: 2893f2bae53cbf3fd49bbe1a8ea1745582ef1317
+
+PODFILE CHECKSUM: d8c25b7d88f69bc1d970e8b83080a01cdce72ba7
+
+COCOAPODS: 1.11.3

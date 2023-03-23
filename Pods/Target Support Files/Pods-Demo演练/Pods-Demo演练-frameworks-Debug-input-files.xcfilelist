@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Demo演练/Pods-Demo演练-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
+${BUILT_PRODUCTS_DIR}/LLDebugTool/LLDebugTool.framework
+${BUILT_PRODUCTS_DIR}/LookinServer/LookinServer.framework
