@@ -27,7 +27,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 删除student表
 -(void)deleteAllStudent;
 
+
+
 -(NSMutableArray*)getAllClassFromStudent:(StudentFMDBModel*)student;
+
+
 /// 给class表添加课程
 -(void)addClass:(StudentClassModel*)clas toStudent:(StudentFMDBModel*)student;
 

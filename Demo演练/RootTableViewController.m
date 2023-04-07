@@ -62,6 +62,10 @@ typedef NS_ENUM(NSInteger,KKEventType) {
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    
+    NSLog(@"%@",window);
+    
 }
 
 #pragma mark - Table view data source

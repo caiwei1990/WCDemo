@@ -152,7 +152,6 @@ static dispatch_once_t onceToken;
 }
 
 /// student表删除内容
-/// - Parameter student: <#student description#>
 -(void)deleteStudent:(StudentFMDBModel*)student{
     
     [fmdb open];
